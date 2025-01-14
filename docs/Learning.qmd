@@ -14,22 +14,16 @@ format: html
 
 ```{r Setup}
 library(tidyverse)
+post_meal_data <- read_csv2(here::here("data/post-meal-insulin.csv"))
 ```
 
-## About me
-
-- Anne Lind Malte^1,2^
-- ^1^Department of clinical Biochemistry, Aarhus University Hospital, ^2^Department of Clinical Medicine, Aarhus University
-
-My core study is a **prospective** cohort study. 
-I plan to include *200* patients in my study.
-
-## Simple code
+## Showing the data
 
 ```{r}
-3 * 3
+post_meal_data
 ```
 
-## Testing for git
+```{r}
+glimpse(post_meal_data)
+```
 
-<!-- The weather is good today. -->
