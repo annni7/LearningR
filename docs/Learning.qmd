@@ -1,0 +1,33 @@
+---
+title: "Reproducible document"
+author: "Anne Lind Malte"
+format: html
+---
+
+## Basic of R
+
+```{r}
+1 + 1
+```
+
+## Setup code chunk 
+
+```{r Setup}
+library(tidyverse)
+```
+
+## About me
+
+- Anne Lind Malte^1,2^
+- ^1^Department of clinical Biochemistry, Aarhus University Hospital, ^2^Department of Clinical Medicine, Aarhus University
+
+My core study is a **prospective** cohort study. 
+I plan to include *200* patients in my study.
+
+## Simple code
+
+```{r}
+3 * 3
+```
+
+
