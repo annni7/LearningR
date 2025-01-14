@@ -5,5 +5,4 @@
 .Rbuildignore
 # MacOS file to ignore
 .DS_Store
-# Quarto folder to ignore
-.quarto
+
