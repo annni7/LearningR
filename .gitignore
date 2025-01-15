@@ -1,6 +1,6 @@
 # R and RStudio files to ignore
 .Rhistory
-.RData
+.RD
 .Rproj.user
 .Rbuildignore
 # MacOS file to ignore
