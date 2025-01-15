@@ -55,20 +55,20 @@ ggplot(post_meal_data, aes(x = glykemi)) +
 See @fig-glykemi-bar for a cool plot!
 
 ```{r}
-post_meal_data|>
-  ggplot(aes(x = Group, fill = glykemi)) + 
+post_meal_data |>
+  ggplot(aes(x = Group, fill = glykemi)) +
   geom_bar()
 ```
 
 ```{r}
-post_meal_data|>
-  ggplot(aes(x = Group, fill = as.character(glykemi))) + 
+post_meal_data |>
+  ggplot(aes(x = Group, fill = as.character(glykemi))) +
   geom_bar()
 ```
 
 ```{r}
-post_meal_data|>
-  ggplot(aes(x = Group, fill = as.character(glykemi))) + 
+post_meal_data |>
+  ggplot(aes(x = Group, fill = as.character(glykemi))) +
   geom_bar(position = position_dodge())
 ```
 
@@ -80,14 +80,14 @@ ggplot(post_meal_data, aes(x = BMI)) +
 ```
 
 ```{r}
-  ggplot(post_meal_data, aes(x = glykemi)) +
+ggplot(post_meal_data, aes(x = glykemi)) +
   geom_bar()
 ```
 
 ```{r side-by-side figs}
 #| label: fig-bmi-glycemia
 #| fig-cap: "BMI and glycemia, side by side"
-#| fig-subcap: 
+#| fig-subcap:
 #| - "Distribution of BMI"
 #| - "Number of those with glycemia"
 #| layout-ncol: 2
@@ -97,5 +97,15 @@ ggplot(post_meal_data, aes(x = BMI)) +
 
 ggplot(post_meal_data, aes(x = glykemi)) +
   geom_bar()
+```
+
+## Plotting two continuous variables
+
+```{r}
+#| fig-cap: "Scatterplot showing BMI against AUC of plasma glucose"
+#| label: fig-bmi-aucpg
+ggplot(post_meal_data, aes(x = BMI, y=auc_pg)) +
+  geom_point() +
+  geom_smooth()
 ```
 
